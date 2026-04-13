@@ -18,5 +18,35 @@
     </ul>
     <h2>Contacto</h2>
     <a href="mailto:carpanettisandra@gmail.com">Enviar correo</a>
+
+    <form action="/procesar" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" />
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <input type="text" name="usuario" />
+    <input type="password" name="password" />
+    <input type="email" name="correo" />
+    <input type="number" name="edad" />
+    <input type="date" name="fecha" />
+
+    <input type="radio" name="genero" value="masculino" />
+    masculino
+    <input type="radio" name="genero" value="femenino" />
+    femenino
+    <input type="checkbox" name="hobby" value="Dormir" />
+    Dormir
+    <input type="checkbox" name="hobby" value="leer" />
+    leer
+
+    <select name="pais">
+      <option value="uy">Uruguay</option>
+      <option value="ar">Argentina</option>
+    </select>
+    <textarea name="mensaje"></textarea>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpiar</button>
   </body>
 </html>
