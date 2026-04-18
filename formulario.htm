@@ -7,23 +7,48 @@
   </head>
   <body>
     <form action="/resultado" method="get">
-      <div></div>
-      <label for="nombre">Nombre</label>
-      <input type="email" name="correo" />
-      <input type="password" name="password" />
-      <input type="radio" name="genero" value="masculino" />
-      masculino
-      <input type="radio" name="genero" value="femenino" />
-      femenino
-      <input type="checkbox" name="hobby" value="leer" />
-      leer
-      <input type="checkbox" name="hobby" value="Dormir" />
-      Dormir
-      <select name="pais">
-        <option value="uy">Uruguay</option>
-        <option value="ar">Argentina</option>
-      </select>
-      <textarea name="mensaje"></textarea>
+      <div class="Nombre">
+        <h2>Nombre</h2>
+        <input type="text" id="nombre" name="nombre" />
+      </div>
+
+      <div class="Correo">
+        <h2>Correo</h2>
+        <input type="email" name="correo" />
+        <h2>Contraseña</h2>
+        <input type="password" name="password" />
+      </div>
+
+      <div class="Género">
+        <h2>Género</h2>
+        <input type="radio" name="genero" value="masculino" />
+        masculino
+        <input type="radio" name="genero" value="femenino" />
+        femenino
+      </div>
+      <div class="Hobbies">
+        <h2>Hobbies</h2>
+        <input type="checkbox" name="hobby" value="leer" />
+        leer
+        <input type="checkbox" name="hobby" value="Dormir" />
+        Dormir
+      </div>
+
+      <div class="select">
+        <h2>Select box</h2>
+        <select name="Nacionalidad" id="">
+          <option value="uy">Uruguay</option>
+          <option value="ar">Argentina</option>
+        </select>
+      </div>
+      <div class="Texto">
+        <h2>Texto</h2>
+        <textarea name="mensaje"></textarea>
+      </div>
+      <div class="Botones">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+      </div>
     </form>
   </body>
 </html>
