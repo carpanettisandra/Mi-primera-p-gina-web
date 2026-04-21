@@ -6,49 +6,54 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="/" method="get">
-      <div class="Nombre">
-        <h2>Nombre</h2>
-        <input type="text" id="nombre" name="nombre" />
-      </div>
+    <header>
+      <h1>Formulario</h1>
+    </header>
+    <nav>
+      <a href="index.htm">Inicio</a>
+      <a href="/formulario.htm">Formulario</a>
+    </nav>
+    <main>
+      <form action="/" method="get">
+        <section id="Login">
+          <label>
+            Nombre
+            <input type="text" name="nombre" />
+          </label>
+          <label>
+            correo
+            <input type="email" name="correo" />
+          </label>
+          <label>
+            contraseña
+            <input type="password" name="password" />
+          </label>
+        </section>
 
-      <div class="Correo">
-        <h2>Correo</h2>
-        <input type="email" name="correo" />
-        <h2>Contraseña</h2>
-        <input type="password" name="password" />
-      </div>
+        <section id="Género">
+          <h2>Género</h2>
+          <label>
+            Hombre
+            <input type="radio" name="genero" id="male" value="male" />
+          </label>
+          <label>
+            Mujer
+            <input type="radio" name="genero" id="female" value="female" />
+          </label>
+        </section>
 
-      <div class="Género">
-        <h2>Género</h2>
-        <input type="radio" name="genero" value="masculino" />
-        masculino
-        <input type="radio" name="genero" value="femenino" />
-        femenino
-      </div>
-      <div class="Hobbies">
-        <h2>Hobbies</h2>
-        <input type="checkbox" name="hobby" value="leer" />
-        leer
-        <input type="checkbox" name="hobby" value="Dormir" />
-        Dormir
-      </div>
+        <section id="Hobbies">
+          <input type="checkbox" name="hobby" value="leer" />
+          leer
+          <input type="checkbox" name="hobby" value="Dormir" />
+          Dormir
+        </section>
 
-      <div class="select">
-        <h2>Select box</h2>
-        <select name="Nacionalidad" id="">
-          <option value="uy">Uruguay</option>
-          <option value="ar">Argentina</option>
-        </select>
-      </div>
-      <div class="Texto">
-        <h2>Texto</h2>
-        <textarea name="mensaje"></textarea>
-      </div>
-      <div class="Botones">
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpiar</button>
-      </div>
-    </form>
+        <section id="Botones">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
